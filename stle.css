@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.flags{
+    width:100%;
+    height: 95vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+}
+.flag{
+    width:51rem;
+    height: 36rem;
+    /* background-color: green; */
+    position: relative;
+    box-shadow: 0 0 5px  rgb(0,0,0);
+    display: grid;
+    place-items: center;
+}
+.flag::before,.flag::after{
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 100%;
+}
+.flag::after{
+    background-color: #f89129;
+    top:0;
+}
+.flag::before{
+    background-color: #009648;
+    bottom: 0;
+}
+.icon-ashoka{
+    background: url('ashoka-chakra.png')  ;
+
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+    animation: circle 5s linear infinite;
+}
+@keyframes circle {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+/* .stick{
+    width: 1.5rem;
+    height: 100vh;
+    background-color: brown;
+    position: absolute;
+    transform: translate(242px, 11px);
+    left:0;
+} */
+.intro{
+    position: fixed;
+    bottom: 15%;
+    left: 3%;
+    background: #efdf5130;
+    padding: 5px 10px;
+    border-radius: 7%;
+}
+.green{ margin-left: 3px;
+color:#009648;
+}
+.white{
+color:wheat;
+}
+.keseria{
+    color:#f89129;
+}
+.celebration{
+
+}
